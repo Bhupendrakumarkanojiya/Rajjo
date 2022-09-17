@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# build
+public
+dist
+
+# test
+coverage
+app/test
+!*.spec.js
+!*.spec.jsx
+!*.spec.ts
+!*.spec.tsx
+
+# source code
+db
+tasks
+knexfile.js
+jest.config.js

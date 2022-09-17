@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "target": "es6",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "rootDirs": [
+      "app",
+      "./"
+    ],
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@test/*": [
+        "test/*"
+      ],
+      "*": [
+        "node_modules/*",
+        "app/*"
+      ]
+    }
+  },
+  "include": [
+    "app/**/*"
+, "tasks/generate-shortened-urls-csv.js"  ],
+  "exclude": [
+    "node_modules",
+    "types",
+    "public",
+    "**/*.spec.ts"
+  ]
+}
