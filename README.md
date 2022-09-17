@@ -5,11 +5,13 @@ yarn db:migrate
 
 --Apis
 GET
-http://localhost:5001//api/v1/menu
+http://localhost:5001/api/v1/menu
 
 Search by term:
 http://localhost:5001/api/v1/menu/search?term=Rot
+
 http://localhost:5001/api/v1/menu/:id/details  (Replace :id with any idf say 24)
+
 --Ex: http://localhost:5001/api/v1/menu/24/details
 
 
